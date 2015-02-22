@@ -83,6 +83,13 @@ print(modFit$finalModel)
 ## Out-of-Sample Error
 
 The random forest model should be highly accurate due to the large sample size of the training data and five-fold cross validation (k=5).
+Confusion matrix:
+     A    B    C    D    E  class.error
+A 2188    0    0    0    1 0.0004568296
+B    5 1476    6    1    0 0.0080645161
+C    0    8 1333    0    0 0.0059656972
+D    0    0    9 1249    1 0.0079428118
+E    0    0    0    5 1407 0.0035410765
 
 
 ## Prediction
