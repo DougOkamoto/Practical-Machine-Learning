@@ -94,7 +94,7 @@ E    0    0    0    5 1407 0.0035410765
 
 The final random forest model is 99.5% accurate with 7,653 matches and 36 mismatches out of 7,689 training observations. 
 
-## Prediction
+## Predictions
 
 Predicted values should match observed values, i.e., 20/20, because user_name and num_window are common factors in both training and test datasets.
 ```{r}
