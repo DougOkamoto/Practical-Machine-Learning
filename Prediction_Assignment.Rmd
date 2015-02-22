@@ -83,6 +83,7 @@ print(modFit$finalModel)
 ## Out-of-Sample Error
 
 The random forest model should be highly accurate due to the large sample size of the training data and five-fold cross validation (k=5).
+
 Confusion matrix:
      A    B    C    D    E  class.error
 A 2188    0    0    0    1 0.0004568296
@@ -91,10 +92,11 @@ C    0    8 1333    0    0 0.0059656972
 D    0    0    9 1249    1 0.0079428118
 E    0    0    0    5 1407 0.0035410765
 
+The final random forest model is 99.5% accurate with 7,653 matches and 36 mismatches out of 7,689 training observations. 
 
 ## Prediction
 
-Predicted values should nearly match the observed values because user_name and num_window are common factors in both training and test datasets.
+Predicted values should match observed values, i.e., 20/20, because user_name and num_window are common factors in both training and test datasets.
 ```{r}
 
 pml_testing2_user_name <- pml_testing2[,2]
